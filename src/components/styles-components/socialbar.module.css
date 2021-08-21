@@ -1,0 +1,48 @@
+.social_sharing {
+    display: none;
+    position: fixed;
+    background: #1e1e1e;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    left: 0;
+    justify-content: space-around;
+    bottom: 0;
+    z-index: 300;
+  }
+  
+  .social_sharing > a {
+    border-top: 1px solid #aaa;
+    width: 33.3%;
+    color: #c1c1c1;
+    margin: auto;
+    text-decoration: none;
+    outline:none;
+    box-decoration-break: unset;
+   
+  }
+  
+  .social_sharing > a:hover {
+    color: #c1c1c1;
+  }
+  
+  .box_face,
+  .box_insta,
+  .box_whatsapp {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e1e1e;
+  }
+
+  
+  @media screen and (max-width: 540px) {
+  
+  
+    .social_sharing {
+      display: flex;
+    }
+  
+   
+  }

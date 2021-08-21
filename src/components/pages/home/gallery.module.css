@@ -1,0 +1,11 @@
+.container_gallery {
+    grid-area: widget_1;
+    height: auto;
+    background: rgb(133, 37, 37);
+  }
+  
+  .container_gallery .img_fluid {
+    border-radius: 7px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.36);
+    border: 3px solid #c1c1c1;
+  }

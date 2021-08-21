@@ -1,0 +1,155 @@
+.NavbarItems {
+  background: #1e1e1e;
+  height: 55px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1rem;
+  z-index: 200;
+  font-family: "Rowdies", cursive;
+  position: relative;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.navbar_logo {
+  color: #c1c1c1;
+  position: absolute;
+  top: 0.7rem;
+  left: 7rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.navbar_logo:hover {
+    color: #c1c1c1;
+
+}
+.nav_menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.nav_links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.nav_links:hover {
+  background-color: rgb(126, 25, 25);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.menu_icon {
+  color: #c1c1c1;
+  display: none;
+}
+
+.backHome {
+    text-decoration: none;
+    position: absolute;
+    right: 2rem;
+    top: 0.7rem;
+    font-family: roboto;
+    color: #c1c1c1;
+    font-size: 1.2rem;
+}
+.backHome:hover {
+    color: #c1c1c1;
+
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav_menu {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: calc(100vh - 110px - 5vh);
+    position: absolute;
+    top: 55px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  .nav_menu.active {
+    background: #1e1e1e;
+    justify-content: center;
+    left: 0;
+    top: 55px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav_links {
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+  }
+
+  .nav_links:hover {
+    background-color: #c1c1c1;
+    border-radius: 0;
+  }
+
+  .navbar_logo {
+    position: absolute;
+    top: 0.8rem;
+    left: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .menu_icon {
+    display: block;
+    position: absolute;
+    position: absolute;
+    right: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav_links_mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #4ad9e4;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .nav_links_mobile:hover {
+    background: #fff;
+    color: #6568f4;
+    transition: 250ms;
+  }
+}
+
+@media screen and (max-width: 540px) {
+
+}

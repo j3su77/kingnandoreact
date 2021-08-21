@@ -1,0 +1,34 @@
+.container__home {
+    background: red;
+    width: 85%;
+    max-width: 1200px;
+    display: grid;
+    grid-gap: 0;
+    margin: auto;
+    margin-bottom: 0;
+    grid-template-areas:
+      "slider slider slider"
+      "chat chat chat"
+      "post post post"
+      "widget_1 widget_1 widget_1"
+      "widget_2 widget_2 widget_2";
+  
+    -webkit-box-shadow: 0px 0px 18px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 18px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 18px 4px rgba(0, 0, 0, 0.75);
+   
+  }
+  
+  .container__home h2 {
+    padding: 2.3em 0 0 0;
+    color: #c1c1c1;
+    font-size: 1.6rem !important;
+  }
+  
+
+  @media screen and (max-width: 540px) {
+    
+    .container__home {
+      width: 100%;
+    }
+}
