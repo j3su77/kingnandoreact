@@ -45,7 +45,7 @@
     list-style: none;
     display: inline-block;
   }
-  .social_buttons li a {
+  .social_buttons  li  a {
     position: relative;
     width: 70px;
     height: 70px;
@@ -54,12 +54,12 @@
     justify-content: center;
     align-items: center;
     margin: 0 10px;
-    border-radius: 50%;
+    border-radius: 20%;
     padding: 6px;
     box-sizing: border-box;
     text-decoration: none;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(0deg, #ddd, #fff);
+    background: linear-gradient(0deg, #c1c1c1, #fff);
     transition: 0.5s;
   }
   .social_buttons li a:hover {
@@ -69,14 +69,19 @@
   .social_buttons li a .fab {
     width: 100%;
     height: 100%;
-    display: block;
+    display: flex;
     align-self: center;
-    background: linear-gradient(0deg, #fff, #ddd);
-    border-radius: 50%;
+    background: linear-gradient(90deg, #e3dede , #fff);
+    border-radius: 20%;
     line-height: calc(70px - 12px);
-    font-size: 35px;
+    justify-content: center;
+    align-items: center;
     color: #1e1e1e;
     transition: 0.5s;
+  }
+  .social_buttons li a .fab > * {
+    font-size: 2rem;
+    
   }
 
   .yisus {

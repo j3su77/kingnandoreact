@@ -2,6 +2,7 @@
     grid-area: post;
     background: #1e1e1e;
     height: auto;
+    min-height: 100vh;
   }
   
   .container_post .gallery__item {

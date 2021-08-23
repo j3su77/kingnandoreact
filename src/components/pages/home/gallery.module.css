@@ -1,5 +1,6 @@
 .container_gallery {
     grid-area: widget_1;
+    min-height: 100vh;
     height: auto;
     background: rgb(133, 37, 37);
   }

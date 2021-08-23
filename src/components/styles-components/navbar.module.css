@@ -1,11 +1,11 @@
 .NavbarItems {
-  background: #1e1e1e;
+  background: #161517;
   height: 55px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 1rem;
-  z-index: 200;
+  z-index: 1001;
   font-family: "Rowdies", cursive;
   position: relative;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
