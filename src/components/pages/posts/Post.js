@@ -7,6 +7,7 @@ import image3 from "../../../images/posts-cover/vanced3.png"
 
 const Post = () => {
     return (
+     
         <div class={Styles.container_post}>
         <div class={Styles.container_page_post}>
           
@@ -42,7 +43,7 @@ const Post = () => {
       
           <div class="paragraph-content p-4 pt-2">
             <h3 class="subtitle-post text-light">Características de YouTube Vanced</h3>
-            <p class="caption-content text-light">
+            <span class="caption-content text-light">
               <ul class="text-light">
                 <li class="mb-2">Reproducción con la pantalla bloqueada. </li>
                 <li class="mb-2">Publicidad bloqueada. </li>
@@ -50,14 +51,14 @@ const Post = () => {
                 <li class="mb-2">Controles de brillo y volumen.</li>
                 <li class="mb-2">Alta personalización.</li>
               </ul>
-            </p>
+            </span>
           </div>
       
           <hr />
       
           <div class="paragraph-content mt-1 p-4">
             <h3 class="subtitle-post text-light">Instrucciones de instalación</h3>
-            <p class="caption-content text-light">
+            <span class="caption-content text-light">
               <ul class="text-light p-4">
                 <li class="mb-2">Descargue e instale la última versión de Vanced
                   Manager
@@ -101,7 +102,7 @@ const Post = () => {
                   google</p>
               </div>
       
-            </p>
+            </span>
           </div>
       
           <div class="portfolio mb-5">

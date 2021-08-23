@@ -3,6 +3,7 @@ import { FaPlay as Play } from "react-icons/fa";
 import { FaPause as Pause } from "react-icons/fa";
 
 const AudioControls = ({ isPlaying, onPlayPauseClick }) => (
+
   <div className="audio-controls">
     {isPlaying ? (
       <button

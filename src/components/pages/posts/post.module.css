@@ -1,4 +1,16 @@
+.container_post {
+    max-width: 1200px;
+    width: 85%;
+    margin: auto;
+    background: #161517;
+}
 
+@media screen and (max-width: 540px) {
+    .container_post {
+        width: 100%;
+    }
+    
+}
 .title_post {
     padding-top: 1rem !important;
     text-align: center;

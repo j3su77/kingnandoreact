@@ -45,7 +45,7 @@ const Footer = () => {
           className={Styles.yisus}
           target="_blank" rel="noopener noreferrer"
         >
-          J3su⚡
+           <span> J3su⚡</span>
         </a>
       </p>
       <br />
