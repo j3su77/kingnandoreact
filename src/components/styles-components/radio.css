@@ -1,5 +1,5 @@
 :root {
-  --dark: #161517;
+  --white: #c1c1c1;
 
 }
 
@@ -36,7 +36,7 @@ button {
 }
 
 .audio-controls path {
-  fill: var(--dark);
+  fill: var(--white);
 }
 
 
@@ -59,7 +59,7 @@ button {
 .radio-container {
   width: 100%;
   margin: auto;
-  background: #083c26;
+  background: #161517;
   position: relative;
 z-index: 1000;
 }
@@ -95,7 +95,7 @@ z-index: 1000;
   /* transform: translateY(-50%); */
   height: 3px;
   width: .8vmin;
-  background: #161517;
+  background: #c1c1c1;
   float: left;
   margin-right: 3px;
   animation-delay: 2s;

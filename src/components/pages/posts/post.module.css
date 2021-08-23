@@ -1,0 +1,16 @@
+
+.title_post {
+    padding-top: 1rem !important;
+    text-align: center;
+    color: #c1c1c1;
+}
+.content_image img {
+    width:100%;
+    height:365px
+}
+.content_image img.img_post_banner {
+    object-fit: cover;
+}
+
+
+
