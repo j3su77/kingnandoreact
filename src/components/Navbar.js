@@ -27,7 +27,7 @@ const Navbar = () => {
             className={navbarStyles.menu_icon}
             onClick={onClick}
           >
-            {!click ? <FaBars /> : <FaTimes />}
+            {!click ? <FaBars /> : <FaTimes color="#d11818" size="1.5rem" />}
           </div>
           <ul
             className={

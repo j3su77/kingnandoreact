@@ -19,18 +19,18 @@ const Footer = () => {
         <ul className={Styles.social_buttons}>
           <li>
             <a href="https://api.whatsapp.com/send?phone=573128464126&app">
-          <div className={Styles.fab}><FaWhatsapp  size="3rem"  /></div>
+          <div className={Styles.fab}><FaWhatsapp  size="2.5rem"  /></div>
             </a>
           </li>
           <li>
             <a href="https://m.facebook.com/elkingnando/">
-            <div className={Styles.fab}><AiOutlineFacebook  size="3rem"  /></div>
+            <div className={Styles.fab}><AiOutlineFacebook  size="2.5rem"  /></div>
             </a>
           </li>
 
           <li>
             <a href="https://www.instagram.com/elkingnando/">
-            <div className={Styles.fab}><RiInstagramLine size="3rem"  /></div>
+            <div className={Styles.fab}><RiInstagramLine size="2.5rem"  /></div>
               
             </a>
           </li>

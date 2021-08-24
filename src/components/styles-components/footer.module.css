@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    background: #1e1e1e;
+    background: #161517;
     height: auto;
     z-index: 210;
     flex-direction: column;
@@ -54,7 +54,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 10px;
-    border-radius: 20%;
+    border-radius: 15%;
     padding: 6px;
     box-sizing: border-box;
     text-decoration: none;
@@ -71,12 +71,12 @@
     height: 100%;
     display: flex;
     align-self: center;
-    background: linear-gradient(90deg, #e3dede , #fff);
-    border-radius: 20%;
+    background: #161517;
+    border-radius: 15%;
     line-height: calc(70px - 12px);
     justify-content: center;
     align-items: center;
-    color: #1e1e1e;
+    color: #ffffff;
     transition: 0.5s;
   }
   .social_buttons li a .fab > * {

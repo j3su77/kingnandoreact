@@ -21,6 +21,15 @@
     height: 450px;
     border: 1px solid #000000;
   }
+  @media screen and (max-width: 740px) {
+    
+    .chat_iframe {
+      width: 95% !important;
+      height: 450px;
+     
+    }
+
+  }
 
   @media screen and (max-width: 540px) {
     

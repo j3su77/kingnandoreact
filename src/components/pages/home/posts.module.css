@@ -33,3 +33,11 @@
     padding-bottom: 2rem;
   }
   
+  .title_post  {
+    font-weight: 700;
+    font-size: 3.5vmin !important;
+    background: #15151578;
+    padding: 0 .5em;
+    line-height: 2rem !important;
+    
+}

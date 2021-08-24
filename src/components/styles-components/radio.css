@@ -22,11 +22,10 @@ button {
   top: -50px;
   left: 0;
   width: 100%;
- position: absolute;
+  position: absolute;
   background: #161517;
   height: 200px;
 }
-
 
 .audio-controls {
   display: flex;
@@ -35,7 +34,7 @@ button {
   transition: 200ms all ease-out;
   left: 0;
   right: 0;
-  bottom: -22px;
+  bottom: -24px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -64,10 +63,16 @@ button {
   -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
 }
-.audio-controls .play svg {
+.audio-controls .play  {
+  position: absolute;
   margin: auto;
-  margin-left: -15px;
-  box-shadow: none;
+  left: 50%;
+  right: 50%;
+  align-items: center;
+  display: grid;
+  align-self: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .audio-controls button path {
@@ -82,7 +87,7 @@ button {
   font-size: 1rem;
   font-family: roboto;
   font-weight: 700;
-  color:  var(--white);;
+  color: var(--white);
   background-color: transparent;
   align-self: center;
   position: absolute;
@@ -114,11 +119,10 @@ button {
   overflow: hidden;
 }
 .animate__animated.animate__heartBeat {
-  position: absolute;
-  top: 10px;
 
-  --animate-duration: 2s;
-  --animate-delay: 4s !important;
+
+  --animate-duration: 3s;
+  --animate-delay: 2s !important;
 }
 
 .radio-container .radio-body .radio-buttons .button {
@@ -131,12 +135,14 @@ button {
 
 .radio-container .radio-body .wave-bars {
   position: absolute;
+  flex-wrap: nowrap;
+  display: flex;
   z-index: 1;
   height: 100%;
-  top: -130px;
+  top: 0;
 }
 .radio-container .radio-body .wave-bars .wave {
-  margin-top: 125px;
+  margin-top: 0px;
   /* transform: translateY(-50%); */
   height: 3px;
   width: 0.8vmin;

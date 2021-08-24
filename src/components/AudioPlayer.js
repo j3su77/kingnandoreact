@@ -72,7 +72,7 @@ const AudioPlayer = () => {
           <div className="audio-controls">
        
             {isPlaying ? (
-              <Marquee gradient={false} speed={50} className="radio-message">
+              <Marquee gradient={false} speed={50} className="radio-message  animate__animated animate__rollIn">
                 <span style={{ marginLeft: "300px"}} >
                 <RiRadioFill className="mx-3" />
                  Sonando el kingnando 
