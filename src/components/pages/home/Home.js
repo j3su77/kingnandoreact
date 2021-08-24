@@ -12,6 +12,7 @@ const Home = () => {
   return (
     <div className={Styles.container__home}>
       <Slider />
+  
       <Chat />
       <Post />
       <Gallery />

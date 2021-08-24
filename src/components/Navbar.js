@@ -17,7 +17,7 @@ const Navbar = () => {
   }
   return (
     <nav className={navbarStyles.NavbarItems}>
-      <Link to="" className={navbarStyles.navbar_logo}>
+      <Link to="/" className={`animate__animated animate__flipInX ${navbarStyles.navbar_logo} `}>
         KINGNANDO
       </Link>
 

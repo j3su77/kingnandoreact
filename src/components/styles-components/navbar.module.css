@@ -33,6 +33,7 @@
   text-align: center;
   justify-content: flex-end;
   margin-top: 1rem;
+  margin-right: 4rem;
 }
 
 .nav_links {
@@ -84,6 +85,7 @@
     transition: all 0.5s ease;
     padding-left: 0;
     margin-top: 0;
+ 
   }
 
   .nav_menu.active {

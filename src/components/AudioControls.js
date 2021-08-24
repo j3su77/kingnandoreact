@@ -4,7 +4,7 @@ import { FaPause as Pause } from "react-icons/fa";
 
 const AudioControls = ({ isPlaying, onPlayPauseClick }) => (
 
-  <div className="audio-controls">
+  <>
     {isPlaying ? (
       <button
         type="button"
@@ -17,14 +17,14 @@ const AudioControls = ({ isPlaying, onPlayPauseClick }) => (
     ) : (
       <button
         type="button"
-        className="play"
+        className="play animate__animated animate__heartBeat"
         onClick={() => onPlayPauseClick(true)}
         aria-label="Play"
       >
         <Play />
       </button>
     )}
-  </div>
+  </>
 );
 
 export default AudioControls;

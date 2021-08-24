@@ -1,14 +1,18 @@
 import React, { useState, useRef } from "react";
+import $ from "jquery";
+import { RiRadioFill } from "react-icons/ri";
 import AudioControls from "./AudioControls";
 import LinesBars from "./LinesBars";
 import "./styles-components/radio.css";
-import "./styles-components/radio.css";
-import $ from "jquery";
+
+import Marquee from "react-fast-marquee";
+import { div } from "prelude-ls";
 
 const AudioPlayer = () => {
-  const ZenoUrl = "http://stream.zeno.fm/71r6wh50ng8uv" 
+  const ZenoUrl = "http://stream.zeno.fm/71r6wh50ng8uv";
   const radio = {
-    audioSrc: (ZenoUrl + "?noCache=" + Math.floor(Math.random() * 1000000))}
+    audioSrc: ZenoUrl + "?noCache=" + Math.floor(Math.random() * 1000000),
+  };
 
   // State
   const [isPlaying, setIsPlaying] = useState(true);
@@ -19,25 +23,21 @@ const AudioPlayer = () => {
   // Refs
   var audioRef = useRef(new Audio(audioSrc));
 
-
-
   const playPromise = audioRef.current.play();
- 
 
   if (playPromise !== undefined) {
     playPromise
       .then((_) => {
-       
         audioRef.current.pause();
         if (!isPlaying) {
           audioRef.current.pause();
           console.log(audioRef);
           waveAfterWave();
         } else {
-          
           console.log(audioRef);
           audioRef.current.play();
           $(".wave").removeClass("no-animation");
+       
         }
         if (audioRef.current.paused) {
           setIsPlaying(false);
@@ -59,6 +59,7 @@ const AudioPlayer = () => {
       $(this).css("height", height);
     });
     $(".wave").addClass("no-animation");
+    
   }
 
   return (
@@ -66,13 +67,32 @@ const AudioPlayer = () => {
       <div className="radio-container">
         <div className="radio-body">
           <LinesBars />
+
           <div className="button">
+          <div className="audio-controls">
+       
+            {isPlaying ? (
+              <Marquee gradient={false} speed={50} className="radio-message">
+                <span style={{ marginLeft: "300px"}} >
+                <RiRadioFill className="mx-3" />
+                 Sonando el kingnando 
+                <RiRadioFill className="mx-3" />
+                </span>
+                <span style={{ marginLeft: "300px"}} >
+                <RiRadioFill className="mx-3" />
+                 Sonando el kingnando 
+                <RiRadioFill className="mx-3" />
+                </span>
+              </Marquee>
+            ) : <div className="radio-lid animate__animated animate__zoomIn "> <div className=""></div> </div>}
             <AudioControls
               isPlaying={isPlaying}
               onPlayPauseClick={setIsPlaying}
             />
           </div>
         </div>
+      </div>
+
       </div>
     </div>
   );
