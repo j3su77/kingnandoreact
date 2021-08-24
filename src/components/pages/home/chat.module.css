@@ -12,6 +12,9 @@
     z-index: 105;
     min-height: 100vh;
   }
+  .container_chat h2 {
+    padding: 1rem 0 0 0 !important;
+  }
   
   .chat_iframe {
     width: 60%;
