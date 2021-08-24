@@ -1,0 +1,18 @@
+.container_ads {
+    width:100%;
+    margin: 6rem 0;
+    display: flex;
+    justify-content: center;
+ 
+}
+.content_image {
+max-width: 100% !important;
+width: 100%;
+}
+
+.imgAds {
+    width: 85% !important;
+    max-width: 1200px;
+    margin: auto;
+    justify-self: center;
+}

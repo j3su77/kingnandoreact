@@ -82,7 +82,7 @@ button {
   font-size: 1rem;
   font-family: roboto;
   font-weight: 700;
-  color: #c1c1c1;
+  color:  var(--white);;
   background-color: transparent;
   align-self: center;
   position: absolute;
