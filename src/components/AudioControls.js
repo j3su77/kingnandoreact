@@ -17,7 +17,7 @@ const AudioControls = ({ isPlaying, onPlayPauseClick }) => (
     ) : (
       <button
         type="button"
-        className="play animate__animated animate__heartBeat"
+        className="play"
         onClick={() => onPlayPauseClick(true)}
         aria-label="Play"
       >

@@ -16,9 +16,9 @@
 .navbar_logo {
   color: #c1c1c1;
   position: absolute;
-  top: 0.7rem;
+  top: 1rem;
   left: 7rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-decoration: none;
 }
 .navbar_logo:hover {
@@ -123,9 +123,9 @@
 
   .navbar_logo {
     position: absolute;
-    top: 0.8rem;
+    top: 1rem;
     left: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .menu_icon {

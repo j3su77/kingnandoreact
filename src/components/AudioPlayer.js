@@ -59,6 +59,8 @@ const AudioPlayer = () => {
       $(this).css("height", height);
     });
     $(".wave").addClass("no-animation");
+    $(".radio-message").removeClass("animate__rollIn");
+
     
   }
 
@@ -72,7 +74,7 @@ const AudioPlayer = () => {
           <div className="audio-controls">
        
             {isPlaying ? (
-              <Marquee gradient={false} speed={50} className="radio-message  animate__animated animate__rollIn">
+              <Marquee gradient={false} speed={50}  >
                 <span style={{ marginLeft: "300px"}} >
                 <RiRadioFill className="mx-3" />
                  Sonando el kingnando 
@@ -84,7 +86,7 @@ const AudioPlayer = () => {
                 <RiRadioFill className="mx-3" />
                 </span>
               </Marquee>
-            ) : <div className="radio-lid animate__animated animate__zoomIn "> <div className=""></div> </div>}
+            ) : <div className="radio-lid animate__animated animate__slideInDown"> <div className=""></div> </div>}
             <AudioControls
               isPlaying={isPlaying}
               onPlayPauseClick={setIsPlaying}
