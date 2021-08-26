@@ -1,6 +1,6 @@
 .container_post {
     grid-area: post;
-    background: #1e1e1e;
+    background: transparent;
     height: auto;
     min-height: 100vh;
   }

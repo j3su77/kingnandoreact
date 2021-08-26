@@ -1,30 +1,35 @@
 import React, { useState, useRef } from "react";
 import $ from "jquery";
-import { RiRadioFill } from "react-icons/ri";
 import AudioControls from "./AudioControls";
 import LinesBars from "./LinesBars";
 import "./styles-components/radio.css";
-
+import { RiRadioFill } from "react-icons/ri";
 import Marquee from "react-fast-marquee";
-import { div } from "prelude-ls";
+
+
+
 
 const AudioPlayer = () => {
+
+
   const ZenoUrl = "http://stream.zeno.fm/71r6wh50ng8uv";
   const radio = {
     audioSrc: ZenoUrl + "?noCache=" + Math.floor(Math.random() * 1000000),
   };
+
+  var height = 0;
 
   // State
   const [isPlaying, setIsPlaying] = useState(true);
 
   // Destructure for conciseness
   const { audioSrc } = radio;
-  var height = "";
+
   // Refs
   var audioRef = useRef(new Audio(audioSrc));
 
   const playPromise = audioRef.current.play();
-
+console.log('imp 2')
   if (playPromise !== undefined) {
     playPromise
       .then((_) => {

@@ -5,7 +5,7 @@ import { MenuItems } from "./MenuItems";
 import ItemNav from "./ItemNav"
 import navbarStyles from "./styles-components/navbar.module.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import { IoArrowUndo } from "react-icons/io5"
 
 
 const Navbar = () => {
@@ -49,6 +49,7 @@ const Navbar = () => {
         <ul>
           <li>
             <Link className={navbarStyles.backHome} to="/">
+            <IoArrowUndo className="mx-1" />
               Regresar
             </Link>
           </li>

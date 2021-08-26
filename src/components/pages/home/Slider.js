@@ -25,6 +25,7 @@ const Slider = () => {
             <img src={image3} alt="" />
           </div>
         </div>
+        <div className={Styles.bottom_bar}></div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPlay as Play } from "react-icons/fa";
+import { IoPlaySharp as Play } from "react-icons/io5";
 import { FaPause as Pause } from "react-icons/fa";
 
 const AudioControls = ({ isPlaying, onPlayPauseClick }) => (
@@ -17,7 +17,7 @@ const AudioControls = ({ isPlaying, onPlayPauseClick }) => (
     ) : (
       <button
         type="button"
-        className="play"
+        className="play animate__animated animate__rollIn"
         onClick={() => onPlayPauseClick(true)}
         aria-label="Play"
       >

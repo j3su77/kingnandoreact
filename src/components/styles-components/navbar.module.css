@@ -1,11 +1,11 @@
 .NavbarItems {
-  background: #161517;
+  background: #111;
   height: 55px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 1rem;
-  z-index: 1001;
+  z-index: 3000;
   font-family: "Rowdies", cursive;
   position: relative;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -20,6 +20,7 @@
   left: 7rem;
   font-size: 1.4rem;
   text-decoration: none;
+  font-weight: 700;
 }
 .navbar_logo:hover {
     color: #c1c1c1;
@@ -93,7 +94,7 @@
   }
 
   .nav_menu.active {
-    background: #161517;
+    background: #111;
     justify-content: center;
     left: 0;
     top: 55px;

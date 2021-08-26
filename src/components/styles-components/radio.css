@@ -8,6 +8,94 @@ button {
   cursor: pointer;
 }
 
+.container_radio {
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 2000;
+  position: relative;
+}
+
+.radio-container {
+  width: 100%;
+  margin: auto;
+  /* background: #0d2b1e; */
+  background: transparent;
+  position: relative;
+  z-index: 1000;
+}
+
+.radio-container .radio-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.animate__animated.animate__slideInDown {
+  --animate-duration: 4s;
+  --animate-delay: 2s !important;
+}
+
+.radio-container .radio-body .radio-buttons .button {
+  color: var(--white);
+  float: left;
+}
+.radio-container .radio-body .radio-buttons .button:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.radio-container .radio-body .wave-bars {
+  position: absolute;
+  flex-wrap: nowrap;
+  display: flex;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+}
+.radio-container .radio-body .wave-bars .wave {
+  margin-top: 24px;
+  transform: translateY(-50%);
+  height: 3px;
+  width: 0.8vmin;
+  background: var(--white);
+  outline: 1px solid #1e1e1e60;
+  margin-right: 3px;
+  animation-delay: 2s;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1002;
+}
+.radio-container .radio-body .wave-bars .wave:first-child {
+  margin-left: 2px;
+}
+.radio-container .radio-body .wave-bars .wave:last-child {
+  margin-right: 0;
+}
+.radio-container .radio-body .wave-bars .wave.wave-1 {
+  animation: wave1 0.5s linear alternate infinite;
+}
+.radio-container .radio-body .wave-bars .wave.wave-2 {
+  animation: wave2 0.7s linear alternate infinite;
+}
+.radio-container .radio-body .wave-bars .wave.wave-3 {
+  animation: wave3 0.6s linear alternate infinite;
+}
+.radio-container .radio-body .wave-bars .wave.wave-4 {
+  animation: wave4 0.5s linear alternate infinite;
+}
+.radio-container .radio-body .wave-bars .wave.wave-5 {
+  animation: wave5 0.6s linear alternate infinite;
+}
+.radio-container .radio-body .wave-bars .wave.no-animation {
+  animation: stopwaves 1s linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .audio-player {
   width: 100%;
   min-height: 200px;
@@ -23,7 +111,7 @@ button {
   left: 0;
   width: 100%;
   position: absolute;
-  background: #161517;
+  background: #111;
   height: 200px;
 }
 
@@ -63,9 +151,21 @@ button {
   -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
 }
-.audio-controls .play  {
- 
-  margin-left: 29px;
+
+.audio-controls .play svg {
+  width: 50px;
+  height: 50px;
+  top: -30px;
+  background: #161517 !important;
+  padding-left: 7px;
+  padding-top: 3px;
+  border-radius: 50%;
+  margin: auto;
+  border: 5px solid #48ec11;
+  margin-left: -24px;
+}
+.audio-controls .play path {
+  fill: var(--white) !important;
 }
 
 .audio-controls button path {
@@ -76,12 +176,12 @@ button {
   background-color: transparent;
 }
 .audio-controls span {
-  color: #c1c1c1;
+  color: var(--white);
   font-family: roboto, arial;
   font-weight: 600;
 }
 .audio-controls span > svg {
-  color: #c1c1c1;
+  color: var(--white);
 }
 
 .radio-message {
@@ -94,92 +194,6 @@ button {
   position: absolute;
   bottom: 0px;
   z-index: 1015;
-}
-
-.container_radio {
-  width: 85%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.radio-container {
-  width: 100%;
-  margin: auto;
-  background: #0d2b1e;
-  position: relative;
-  z-index: 1000;
-}
-
-.radio-container .radio-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
-  position: relative;
-  overflow: hidden;
-}
-.animate__animated.animate__slideInDown {
-
-
-  --animate-duration: 4s;
-  --animate-delay: 2s !important;
-}
-
-.radio-container .radio-body .radio-buttons .button {
-  color: #c1c1c1;
-  float: left;
-}
-.radio-container .radio-body .radio-buttons .button:hover {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.radio-container .radio-body .wave-bars {
-  position: absolute;
-  flex-wrap: nowrap;
-  display: flex;
-  z-index: 1;
-  height: 100%;
-  top: 0;
-}
-.radio-container .radio-body .wave-bars .wave {
-  margin-top: 0px;
-  /* transform: translateY(-50%); */
-  height: 3px;
-  width: 0.8vmin;
-  background: #c1c1c1;
-  float: left;
-  margin-right: 3px;
-  animation-delay: 2s;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1002;
-}
-.radio-container .radio-body .wave-bars .wave:first-child {
-  margin-left: 2px;
-}
-.radio-container .radio-body .wave-bars .wave:last-child {
-  margin-right: 0;
-}
-.radio-container .radio-body .wave-bars .wave.wave-1 {
-  animation: wave1 0.5s linear alternate infinite;
-}
-.radio-container .radio-body .wave-bars .wave.wave-2 {
-  animation: wave2 0.7s linear alternate infinite;
-}
-.radio-container .radio-body .wave-bars .wave.wave-3 {
-  animation: wave3 0.6s linear alternate infinite;
-}
-.radio-container .radio-body .wave-bars .wave.wave-4 {
-  animation: wave4 0.5s linear alternate infinite;
-}
-.radio-container .radio-body .wave-bars .wave.wave-5 {
-  animation: wave5 0.6s linear alternate infinite;
-}
-.radio-container .radio-body .wave-bars .wave.no-animation {
-  animation: stopwaves 1s linear;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes background-scroll {

@@ -4,6 +4,7 @@ import image from "../images/title-kn2.png"
 import { FaWhatsapp } from "react-icons/fa";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { RiInstagramLine } from "react-icons/ri";
+import { FcFlashOn } from "react-icons/fc"
 
 const Footer = () => {
   return (
@@ -45,12 +46,12 @@ const Footer = () => {
           className={Styles.yisus}
           target="_blank" rel="noopener noreferrer"
         >
-           <span> J3su⚡</span>
+           <span> J3su<FcFlashOn /></span>
         </a>
       </p>
       <br />
       <p>
-        <span styles={{ fontSize: "1.1rem" }}>&copy;</span> 2021
+        <span styles={{ fontSize: "1.1rem" }}>&copy;</span> {new Date().getFullYear()}
       </p>
     </footer>
   );
