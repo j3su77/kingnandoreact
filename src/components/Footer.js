@@ -49,7 +49,7 @@ const Footer = () => {
            <span> J3su<FcFlashOn /></span>
         </a>
       </p>
-      <br />
+ 
       <p>
         <span styles={{ fontSize: "1.1rem" }}>&copy;</span> {new Date().getFullYear()}
       </p>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles-components/radio.css";
+import "./radio.css";
 
 const LinesBars = () => {
   return (

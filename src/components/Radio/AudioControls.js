@@ -17,7 +17,7 @@ const AudioControls = ({ isPlaying, onPlayPauseClick }) => (
     ) : (
       <button
         type="button"
-        className="play animate__animated animate__rollIn"
+        className="play animate__animated animate__fadeInUp animate__delay-2s"
         onClick={() => onPlayPauseClick(true)}
         aria-label="Play"
       >
